@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="c" class="com.day1.Q3.Circle">
+    <property name="shape" value="Circle"/>
+    </bean>
+    
+    <bean id="t" class="com.day1.Q3.Triangle">
+    <property name="shape" value="Triangle"/>
+    </bean>
+    
+    <bean id="cy" class="com.day1.Q3.Cyclinder">
+    <property name="shape" value="Cyclinder"/>
+    </bean>
+
+</beans>

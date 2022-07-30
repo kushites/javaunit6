@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="dao" class="com.day2.Q1.Dao"/>
+
+<bean id="services" class="com.day2.Q1.Service">
+<property name="d" ref="dao"/>
+</bean>
+
+<bean id="present" class="com.day2.Q1.Present">
+<property name="s" ref="services"/>
+</bean>
+
+<bean id="lf" class="com.day2.Q2.LifeCyle" init-method="initialize" destroy-method="destroy"/>
+  
+
+</beans>
